@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="TaxCalculator.css">
+</head>
+<body>
+    <h1>Tax Calculator</h1>
+    <form>
+        <label for="grossIncome">Gross Annual Income:</label>
+        <input type="number" id="grossIncome" name="grossIncome" required>
+        <label for="extraIncome">Extra Income:</label>
+        <input type="number" id="extraIncome" name="extraIncome" required>
+        <label for="ageGroup">Age Group:</label>
+        <select id="ageGroup" name="ageGroup" required>
+            <option value="">Select Age Group</option>
+            <option value="under30">Under 30</option>
+            <option value="30to50">30 to 50</option>
+            <option value="over50">Over 50</option>
+        </select>
+        <label for="deduction">Total Applicable Deduction:</label>
+        <input type="number" id="deduction" name="deduction" required>
+        <button type="button" id="calculate">Calculate Tax</button>
+    </form>
+    <div class="result"></div>
+    <script src="TaxCalculator.js"></script>
+</body>
+</html>
